@@ -11,6 +11,7 @@
 		CE4017F62771D2E80060444E /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4017F52771D2E80060444E /* SplashScreenPresenter.swift */; };
 		CE4017F82771D5DF0060444E /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4017F72771D5DF0060444E /* SplashScreenViewController.swift */; };
 		CE83CFF52772035B0053FA13 /* SplashScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CFF42772035B0053FA13 /* SplashScreenProtocols.swift */; };
+		CE83CFF72772044F0053FA13 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CFF62772044F0053FA13 /* ModuleBuilder.swift */; };
 		CE8E50B12760FDC00024F187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50B02760FDC00024F187 /* AppDelegate.swift */; };
 		CE8E50B32760FDC00024F187 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50B22760FDC00024F187 /* SceneDelegate.swift */; };
 		CE8E50B52760FDC00024F187 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50B42760FDC00024F187 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 		CE4017F52771D2E80060444E /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
 		CE4017F72771D5DF0060444E /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		CE83CFF42772035B0053FA13 /* SplashScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenProtocols.swift; sourceTree = "<group>"; };
+		CE83CFF62772044F0053FA13 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		CE8E50AD2760FDC00024F187 /* TaskTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8E50B02760FDC00024F187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8E50B22760FDC00024F187 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		CE8E50AF2760FDC00024F187 /* TaskTracker */ = {
 			isa = PBXGroup;
 			children = (
+				CE83CFF62772044F0053FA13 /* ModuleBuilder.swift */,
 				CE4017F12771D25B0060444E /* Model */,
 				CE4017F42771D2B40060444E /* SplashScreen */,
 				CE8E50B02760FDC00024F187 /* AppDelegate.swift */,
@@ -291,6 +294,7 @@
 				CE8E50B52760FDC00024F187 /* ViewController.swift in Sources */,
 				CE4017F62771D2E80060444E /* SplashScreenPresenter.swift in Sources */,
 				CE4017F82771D5DF0060444E /* SplashScreenViewController.swift in Sources */,
+				CE83CFF72772044F0053FA13 /* ModuleBuilder.swift in Sources */,
 				CE8E50B12760FDC00024F187 /* AppDelegate.swift in Sources */,
 				CE8E50B32760FDC00024F187 /* SceneDelegate.swift in Sources */,
 				CE83CFF52772035B0053FA13 /* SplashScreenProtocols.swift in Sources */,

@@ -8,18 +8,18 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    
     var window: UIWindow?
-
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        let window = UIWindow(windowScene: windowScene)
+        self.window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        window?.windowScene = windowScene
         
-        let mainViewController = SplashScreenViewController()
+        let mainViewController = ModuleBuilder.createSplash()
         
-        window.rootViewController = mainViewController
-        self.window = window
-        window.makeKeyAndVisible()
+        window?.rootViewController = mainViewController
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
