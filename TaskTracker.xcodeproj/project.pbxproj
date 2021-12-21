@@ -10,6 +10,7 @@
 		CE4017F32771D26D0060444E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4017F22771D26D0060444E /* Task.swift */; };
 		CE4017F62771D2E80060444E /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4017F52771D2E80060444E /* SplashScreenPresenter.swift */; };
 		CE4017F82771D5DF0060444E /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4017F72771D5DF0060444E /* SplashScreenViewController.swift */; };
+		CE83CFF52772035B0053FA13 /* SplashScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CFF42772035B0053FA13 /* SplashScreenProtocols.swift */; };
 		CE8E50B12760FDC00024F187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50B02760FDC00024F187 /* AppDelegate.swift */; };
 		CE8E50B32760FDC00024F187 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50B22760FDC00024F187 /* SceneDelegate.swift */; };
 		CE8E50B52760FDC00024F187 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50B42760FDC00024F187 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		CE4017F22771D26D0060444E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		CE4017F52771D2E80060444E /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
 		CE4017F72771D5DF0060444E /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		CE83CFF42772035B0053FA13 /* SplashScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenProtocols.swift; sourceTree = "<group>"; };
 		CE8E50AD2760FDC00024F187 /* TaskTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8E50B02760FDC00024F187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8E50B22760FDC00024F187 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				CE4017F52771D2E80060444E /* SplashScreenPresenter.swift */,
 				CE4017F72771D5DF0060444E /* SplashScreenViewController.swift */,
+				CE83CFF42772035B0053FA13 /* SplashScreenProtocols.swift */,
 			);
 			path = SplashScreen;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				CE4017F82771D5DF0060444E /* SplashScreenViewController.swift in Sources */,
 				CE8E50B12760FDC00024F187 /* AppDelegate.swift in Sources */,
 				CE8E50B32760FDC00024F187 /* SceneDelegate.swift in Sources */,
+				CE83CFF52772035B0053FA13 /* SplashScreenProtocols.swift in Sources */,
 				CE8E50E427614D750024F187 /* SecondViewController.swift in Sources */,
 				CE4017F32771D26D0060444E /* Task.swift in Sources */,
 				CE8E50BB2760FDC00024F187 /* TaskTracker.xcdatamodeld in Sources */,
