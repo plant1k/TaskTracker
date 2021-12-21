@@ -13,6 +13,8 @@ final class ProfileScreenViewController: UIViewController {
     override func viewDidLoad() {
         self.title = "Profile"
         view.backgroundColor = .white
-        //navigationItem.title = "Profile"
+        navigationItem.title = "Profile"
+        self.navigationController?.navigationBar.barTintColor = .black
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
 }

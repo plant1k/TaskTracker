@@ -57,6 +57,7 @@ final class SplashScreenViewController: UIViewController {
     
     private func setupNavigationBar() {
         navigationItem.hidesBackButton = true
+        
     }
     
     private func setupLabel() {

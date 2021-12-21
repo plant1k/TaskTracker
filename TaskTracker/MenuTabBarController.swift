@@ -11,11 +11,12 @@ import UIKit
 final class MenuTabBarController: UITabBarController {
     
     override func viewDidLoad() {
-      super.viewDidLoad()
-        
+        super.viewDidLoad()
+        setupTabBar()
     }
     
-    private func setupNavigationBar() {
-        
+    private func setupTabBar() {
+       tabBar.barStyle = .black
+        tabBar.unselectedItemTintColor = .white
     }
 }

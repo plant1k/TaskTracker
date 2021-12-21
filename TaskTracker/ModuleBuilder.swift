@@ -31,8 +31,7 @@ final class ModuleBuilder: Build {
         
         tabBarView.modalTransitionStyle = .flipHorizontal
         tabBarView.modalPresentationStyle = .fullScreen
-     
-        tabBarView.setViewControllers([mainView,profileView], animated: true)
+        tabBarView.setViewControllers([mainView,profileView], animated: false)
         
         return tabBarView
     }
