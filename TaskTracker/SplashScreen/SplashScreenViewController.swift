@@ -75,6 +75,6 @@ final class SplashScreenViewController: UIViewController {
     
     @objc private func buttonTap() {
         let tabBarViewController = moduleBuilder.createTabBarViewController()
-        navigationController?.pushViewController(tabBarViewController, animated: true)
+        present(tabBarViewController, animated: true, completion: nil)
     }
 }

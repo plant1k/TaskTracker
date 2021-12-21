@@ -19,29 +19,33 @@ final class ModuleBuilder: Build {
     
     func createSplash() -> UIViewController {
         let splash = SplashScreenViewController()
-        let view = UINavigationController(rootViewController: splash)
-        return view
+//        let view = UINavigationController(rootViewController: splash)
+        return splash
     }
     
     func createTabBarViewController() -> UIViewController {
         let tabBarView = MenuTabBarController()
-        tabBarView.navigationItem.hidesBackButton = true
+      
         let mainView = createMainViewController()
         let profileView = createProfileViewController()
         
+        tabBarView.modalTransitionStyle = .flipHorizontal
+        tabBarView.modalPresentationStyle = .fullScreen
+     
         tabBarView.setViewControllers([mainView,profileView], animated: true)
+        
         return tabBarView
     }
     
     func createMainViewController() -> UIViewController {
         let mainView = MainScreenViewController()
-        let navigaton = UINavigationController(rootViewController: mainView)
-        return navigaton
+        let navigation = UINavigationController(rootViewController: mainView)
+        return navigation
     }
     
     func createProfileViewController() -> UIViewController {
         let profileView = ProfileScreenViewController()
-        let navigaton = UINavigationController(rootViewController: profileView)
-        return navigaton
+        let navigation = UINavigationController(rootViewController: profileView)
+        return navigation
     }
 }

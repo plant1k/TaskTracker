@@ -16,6 +16,6 @@ final class MenuTabBarController: UITabBarController {
     }
     
     private func setupNavigationBar() {
-        navigationItem.hidesBackButton = true
+        
     }
 }

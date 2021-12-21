@@ -13,6 +13,6 @@ final class MainScreenViewController: UIViewController {
     override func viewDidLoad() {
         self.title = "Main"
         view.backgroundColor = .white
-        navigationItem.title = "Main"
+       // navigationItem.title = "Main"
     }
 }

@@ -16,6 +16,7 @@
 		CE83CFFC277208B90053FA13 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CFFB277208B90053FA13 /* MainScreenViewController.swift */; };
 		CE83CFFF2772150A0053FA13 /* ProfileScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CFFE2772150A0053FA13 /* ProfileScreenViewController.swift */; };
 		CE83D001277215B10053FA13 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83D000277215B10053FA13 /* MenuTabBarController.swift */; };
+		CE83D00327721FBF0053FA13 /* ProfileScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83D00227721FBF0053FA13 /* ProfileScreenPresenter.swift */; };
 		CE8E50B12760FDC00024F187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50B02760FDC00024F187 /* AppDelegate.swift */; };
 		CE8E50B32760FDC00024F187 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50B22760FDC00024F187 /* SceneDelegate.swift */; };
 		CE8E50BB2760FDC00024F187 /* TaskTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50B92760FDC00024F187 /* TaskTracker.xcdatamodeld */; };
@@ -53,6 +54,7 @@
 		CE83CFFB277208B90053FA13 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		CE83CFFE2772150A0053FA13 /* ProfileScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewController.swift; sourceTree = "<group>"; };
 		CE83D000277215B10053FA13 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
+		CE83D00227721FBF0053FA13 /* ProfileScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenPresenter.swift; sourceTree = "<group>"; };
 		CE8E50AD2760FDC00024F187 /* TaskTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8E50B02760FDC00024F187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8E50B22760FDC00024F187 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				CE83CFFE2772150A0053FA13 /* ProfileScreenViewController.swift */,
+				CE83D00227721FBF0053FA13 /* ProfileScreenPresenter.swift */,
 			);
 			path = ProfileScreen;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				CE8E50B32760FDC00024F187 /* SceneDelegate.swift in Sources */,
 				CE83CFF52772035B0053FA13 /* SplashScreenProtocols.swift in Sources */,
 				CE83CFFF2772150A0053FA13 /* ProfileScreenViewController.swift in Sources */,
+				CE83D00327721FBF0053FA13 /* ProfileScreenPresenter.swift in Sources */,
 				CE4017F32771D26D0060444E /* Task.swift in Sources */,
 				CE8E50BB2760FDC00024F187 /* TaskTracker.xcdatamodeld in Sources */,
 			);
