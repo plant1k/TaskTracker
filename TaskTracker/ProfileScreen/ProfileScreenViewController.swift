@@ -10,6 +10,10 @@ import UIKit
 
 final class ProfileScreenViewController: UIViewController {
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         self.title = "Profile"
         view.backgroundColor = .white

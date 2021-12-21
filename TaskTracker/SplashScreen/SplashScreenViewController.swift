@@ -14,6 +14,10 @@ final class SplashScreenViewController: UIViewController {
     let imageView = UIImageView()
     let moduleBuilder = ModuleBuilder()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -67,7 +71,7 @@ final class SplashScreenViewController: UIViewController {
     }
     
     private func setupButton() {
-        button.backgroundColor = UIColor(red: 30/255, green: 48/255, blue: 120/255, alpha: 1)
+        button.backgroundColor = Color.seaBlue
         button.tintColor = .white
         button.setTitle("Get Started", for: .normal)
         button.layer.cornerRadius = 15
