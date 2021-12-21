@@ -12,16 +12,18 @@
 		CE4017F82771D5DF0060444E /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4017F72771D5DF0060444E /* SplashScreenViewController.swift */; };
 		CE83CFF52772035B0053FA13 /* SplashScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CFF42772035B0053FA13 /* SplashScreenProtocols.swift */; };
 		CE83CFF72772044F0053FA13 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CFF62772044F0053FA13 /* ModuleBuilder.swift */; };
+		CE83CFFA2772089E0053FA13 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CFF92772089E0053FA13 /* MainScreenPresenter.swift */; };
+		CE83CFFC277208B90053FA13 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CFFB277208B90053FA13 /* MainScreenViewController.swift */; };
+		CE83CFFF2772150A0053FA13 /* ProfileScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CFFE2772150A0053FA13 /* ProfileScreenViewController.swift */; };
+		CE83D001277215B10053FA13 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83D000277215B10053FA13 /* MenuTabBarController.swift */; };
 		CE8E50B12760FDC00024F187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50B02760FDC00024F187 /* AppDelegate.swift */; };
 		CE8E50B32760FDC00024F187 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50B22760FDC00024F187 /* SceneDelegate.swift */; };
-		CE8E50B52760FDC00024F187 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50B42760FDC00024F187 /* ViewController.swift */; };
 		CE8E50BB2760FDC00024F187 /* TaskTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50B92760FDC00024F187 /* TaskTracker.xcdatamodeld */; };
 		CE8E50BD2760FDC20024F187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8E50BC2760FDC20024F187 /* Assets.xcassets */; };
 		CE8E50C02760FDC20024F187 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8E50BE2760FDC20024F187 /* LaunchScreen.storyboard */; };
 		CE8E50CB2760FDC20024F187 /* TaskTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50CA2760FDC20024F187 /* TaskTrackerTests.swift */; };
 		CE8E50D52760FDC20024F187 /* TaskTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50D42760FDC20024F187 /* TaskTrackerUITests.swift */; };
 		CE8E50D72760FDC20024F187 /* TaskTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50D62760FDC20024F187 /* TaskTrackerUITestsLaunchTests.swift */; };
-		CE8E50E427614D750024F187 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50E327614D750024F187 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +49,13 @@
 		CE4017F72771D5DF0060444E /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		CE83CFF42772035B0053FA13 /* SplashScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenProtocols.swift; sourceTree = "<group>"; };
 		CE83CFF62772044F0053FA13 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		CE83CFF92772089E0053FA13 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
+		CE83CFFB277208B90053FA13 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		CE83CFFE2772150A0053FA13 /* ProfileScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewController.swift; sourceTree = "<group>"; };
+		CE83D000277215B10053FA13 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
 		CE8E50AD2760FDC00024F187 /* TaskTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8E50B02760FDC00024F187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8E50B22760FDC00024F187 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE8E50B42760FDC00024F187 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE8E50BA2760FDC00024F187 /* TaskTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskTracker.xcdatamodel; sourceTree = "<group>"; };
 		CE8E50BC2760FDC20024F187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8E50BF2760FDC20024F187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,7 +65,6 @@
 		CE8E50D02760FDC20024F187 /* TaskTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8E50D42760FDC20024F187 /* TaskTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTrackerUITests.swift; sourceTree = "<group>"; };
 		CE8E50D62760FDC20024F187 /* TaskTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		CE8E50E327614D750024F187 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +103,28 @@
 		CE4017F42771D2B40060444E /* SplashScreen */ = {
 			isa = PBXGroup;
 			children = (
+				CE83CFF42772035B0053FA13 /* SplashScreenProtocols.swift */,
 				CE4017F52771D2E80060444E /* SplashScreenPresenter.swift */,
 				CE4017F72771D5DF0060444E /* SplashScreenViewController.swift */,
-				CE83CFF42772035B0053FA13 /* SplashScreenProtocols.swift */,
 			);
 			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		CE83CFF82772087E0053FA13 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE83CFF92772089E0053FA13 /* MainScreenPresenter.swift */,
+				CE83CFFB277208B90053FA13 /* MainScreenViewController.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		CE83CFFD277214F00053FA13 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE83CFFE2772150A0053FA13 /* ProfileScreenViewController.swift */,
+			);
+			path = ProfileScreen;
 			sourceTree = "<group>";
 		};
 		CE8E50A42760FDC00024F187 = {
@@ -129,13 +150,14 @@
 		CE8E50AF2760FDC00024F187 /* TaskTracker */ = {
 			isa = PBXGroup;
 			children = (
-				CE83CFF62772044F0053FA13 /* ModuleBuilder.swift */,
 				CE4017F12771D25B0060444E /* Model */,
+				CE83CFF62772044F0053FA13 /* ModuleBuilder.swift */,
+				CE83D000277215B10053FA13 /* MenuTabBarController.swift */,
 				CE4017F42771D2B40060444E /* SplashScreen */,
+				CE83CFF82772087E0053FA13 /* MainScreen */,
+				CE83CFFD277214F00053FA13 /* ProfileScreen */,
 				CE8E50B02760FDC00024F187 /* AppDelegate.swift */,
 				CE8E50B22760FDC00024F187 /* SceneDelegate.swift */,
-				CE8E50E327614D750024F187 /* SecondViewController.swift */,
-				CE8E50B42760FDC00024F187 /* ViewController.swift */,
 				CE8E50BC2760FDC20024F187 /* Assets.xcassets */,
 				CE8E50BE2760FDC20024F187 /* LaunchScreen.storyboard */,
 				CE8E50C12760FDC20024F187 /* Info.plist */,
@@ -291,14 +313,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE8E50B52760FDC00024F187 /* ViewController.swift in Sources */,
 				CE4017F62771D2E80060444E /* SplashScreenPresenter.swift in Sources */,
+				CE83CFFA2772089E0053FA13 /* MainScreenPresenter.swift in Sources */,
 				CE4017F82771D5DF0060444E /* SplashScreenViewController.swift in Sources */,
 				CE83CFF72772044F0053FA13 /* ModuleBuilder.swift in Sources */,
+				CE83D001277215B10053FA13 /* MenuTabBarController.swift in Sources */,
+				CE83CFFC277208B90053FA13 /* MainScreenViewController.swift in Sources */,
 				CE8E50B12760FDC00024F187 /* AppDelegate.swift in Sources */,
 				CE8E50B32760FDC00024F187 /* SceneDelegate.swift in Sources */,
 				CE83CFF52772035B0053FA13 /* SplashScreenProtocols.swift in Sources */,
-				CE8E50E427614D750024F187 /* SecondViewController.swift in Sources */,
+				CE83CFFF2772150A0053FA13 /* ProfileScreenViewController.swift in Sources */,
 				CE4017F32771D26D0060444E /* Task.swift in Sources */,
 				CE8E50BB2760FDC00024F187 /* TaskTracker.xcdatamodeld in Sources */,
 			);

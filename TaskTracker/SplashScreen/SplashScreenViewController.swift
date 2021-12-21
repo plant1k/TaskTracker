@@ -12,12 +12,14 @@ final class SplashScreenViewController: UIViewController {
     let label = UILabel()
     let button = UIButton()
     let imageView = UIImageView()
+    let moduleBuilder = ModuleBuilder()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
         setupButton()
         setupLabel()
+        setupNavigationBar()
     }
     
     private func setup() {
@@ -53,6 +55,10 @@ final class SplashScreenViewController: UIViewController {
         imageView.image = UIImage(named: "smoke")
    }
     
+    private func setupNavigationBar() {
+        navigationItem.hidesBackButton = true
+    }
+    
     private func setupLabel() {
         label.font = label.font.withSize(30)
         label.text = "Life Tracker"
@@ -68,6 +74,7 @@ final class SplashScreenViewController: UIViewController {
     }
     
     @objc private func buttonTap() {
-        print("TAP")
+        let tabBarViewController = moduleBuilder.createTabBarViewController()
+        navigationController?.pushViewController(tabBarViewController, animated: true)
     }
 }
