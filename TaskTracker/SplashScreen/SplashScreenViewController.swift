@@ -55,7 +55,7 @@ final class SplashScreenViewController: UIViewController {
     
     private func setupLabel() {
         label.font = label.font.withSize(30)
-        label.text = "Life Tracker v1"
+        label.text = "Life Tracker"
         label.textColor = .white
     }
     
