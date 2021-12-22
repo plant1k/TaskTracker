@@ -65,7 +65,7 @@ final class SplashScreenViewController: UIViewController {
     }
     
     private func setupLabel() {
-        label.font = label.font.withSize(30)
+        label.font = Fonts.ubuntuBoldHeader
         label.text = "Life Tracker"
         label.textColor = .white
     }
@@ -74,6 +74,7 @@ final class SplashScreenViewController: UIViewController {
         button.backgroundColor = Color.seaBlue
         button.tintColor = .white
         button.setTitle("Get Started", for: .normal)
+        button.titleLabel?.font = Fonts.ubuntuBoldText
         button.layer.cornerRadius = 15
         button.addTarget(self, action: #selector(buttonTap), for: .touchUpInside)
     }

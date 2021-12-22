@@ -18,6 +18,8 @@
 		CE83D001277215B10053FA13 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83D000277215B10053FA13 /* MenuTabBarController.swift */; };
 		CE83D00327721FBF0053FA13 /* ProfileScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83D00227721FBF0053FA13 /* ProfileScreenPresenter.swift */; };
 		CE83D005277246AA0053FA13 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83D004277246AA0053FA13 /* ColorConstants.swift */; };
+		CE83D008277337D50053FA13 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE83D007277337D50053FA13 /* Ubuntu-Light.ttf */; };
+		CE83D00A277339160053FA13 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE83D009277339160053FA13 /* Ubuntu-Bold.ttf */; };
 		CE8E50B12760FDC00024F187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50B02760FDC00024F187 /* AppDelegate.swift */; };
 		CE8E50B32760FDC00024F187 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50B22760FDC00024F187 /* SceneDelegate.swift */; };
 		CE8E50BB2760FDC00024F187 /* TaskTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE8E50B92760FDC00024F187 /* TaskTracker.xcdatamodeld */; };
@@ -57,6 +59,8 @@
 		CE83D000277215B10053FA13 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
 		CE83D00227721FBF0053FA13 /* ProfileScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenPresenter.swift; sourceTree = "<group>"; };
 		CE83D004277246AA0053FA13 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		CE83D007277337D50053FA13 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-Light.ttf"; path = "../../../../Downloads/Ubuntu/Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		CE83D009277339160053FA13 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-Bold.ttf"; path = "../../../../Downloads/Ubuntu/Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
 		CE8E50AD2760FDC00024F187 /* TaskTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8E50B02760FDC00024F187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8E50B22760FDC00024F187 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +136,15 @@
 			path = ProfileScreen;
 			sourceTree = "<group>";
 		};
+		CE83D006277337970053FA13 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CE83D007277337D50053FA13 /* Ubuntu-Light.ttf */,
+				CE83D009277339160053FA13 /* Ubuntu-Bold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		CE8E50A42760FDC00024F187 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +168,7 @@
 		CE8E50AF2760FDC00024F187 /* TaskTracker */ = {
 			isa = PBXGroup;
 			children = (
+				CE83D006277337970053FA13 /* Font */,
 				CE83D004277246AA0053FA13 /* ColorConstants.swift */,
 				CE4017F12771D25B0060444E /* Model */,
 				CE83CFF62772044F0053FA13 /* ModuleBuilder.swift */,
@@ -293,7 +307,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE83D00A277339160053FA13 /* Ubuntu-Bold.ttf in Resources */,
 				CE8E50C02760FDC20024F187 /* LaunchScreen.storyboard in Resources */,
+				CE83D008277337D50053FA13 /* Ubuntu-Light.ttf in Resources */,
 				CE8E50BD2760FDC20024F187 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

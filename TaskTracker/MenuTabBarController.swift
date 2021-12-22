@@ -20,7 +20,8 @@ final class MenuTabBarController: UITabBarController {
     }
     
     private func setupTabBar() {
-       tabBar.barStyle = .black
+        tabBar.barStyle = .black
         tabBar.unselectedItemTintColor = .white
+        tabBar.isTranslucent = false
     }
 }

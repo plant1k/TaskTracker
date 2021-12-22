@@ -10,15 +10,29 @@ import UIKit
 
 final class ProfileScreenViewController: UIViewController {
     
+    let main = MainScreenViewController()
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
     override func viewDidLoad() {
-        self.title = "Profile"
+      
         view.backgroundColor = .white
-        navigationItem.title = "Profile"
+        setupTabBar()
+    }
+    
+    private func setupNavigationBar() {
         self.navigationController?.navigationBar.barTintColor = .black
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationItem.title = "Calendar"
+    }
+    
+    private func setupTabBar() {
+        let home = UIImage(named: "home")
+        let image = main.resizeImage(image: home!, targetSize: CGSize(width: 25, height: 25))
+        
+        let tabBarItem = UITabBarItem(title: "Calendar", image: image, tag: 1)
+        self.tabBarItem = tabBarItem
     }
 }

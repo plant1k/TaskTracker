@@ -30,32 +30,42 @@ final class MainScreenViewController: UIViewController {
     
     private func addButonView() -> UIView {
         let subViewForButton = UIView()
+        let label = UILabel()
         subViewForButton.backgroundColor = UIColor(red: 28/255, green: 28/255, blue: 28/255, alpha: 1)
         subViewForButton.layer.borderColor = CGColor.init(red: 1, green: 1, blue: 1, alpha: 1)
         subViewForButton.layer.borderWidth = 0.1
         
-        [subViewForButton, button].forEach {
+        [subViewForButton, button, label].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             $0.clipsToBounds = true
         }
         
         button.backgroundColor = Color.lightBlue
-        button.setTitle("+", for: .normal)
+        button.addTarget(self, action: #selector(self.tap), for: .touchUpInside)
         
+        label.text = "+"
+        label.font = UIFont.systemFont(ofSize: 35)
+        label.textColor = .white
+        label.textAlignment = .center
+
         subViewForButton.addSubview(button)
+        button.addSubview(label)
         
         NSLayoutConstraint.activate([
-            subViewForButton.widthAnchor.constraint(equalToConstant: 50),
-            subViewForButton.heightAnchor.constraint(equalToConstant: 50),
+            subViewForButton.widthAnchor.constraint(equalToConstant: 45),
+            subViewForButton.heightAnchor.constraint(equalToConstant: 45),
             
             button.widthAnchor.constraint(equalToConstant: 40),
             button.heightAnchor.constraint(equalToConstant: 40),
             
             button.centerXAnchor.constraint(equalTo: subViewForButton.centerXAnchor),
-            button.centerYAnchor.constraint(equalTo: subViewForButton.centerYAnchor)
+            button.centerYAnchor.constraint(equalTo: subViewForButton.centerYAnchor),
+            
+            label.centerXAnchor.constraint(equalTo: button.centerXAnchor),
+            label.topAnchor.constraint(equalTo: button.topAnchor, constant: -2),
         ])
         
-        subViewForButton.layer.cornerRadius = 25
+        subViewForButton.layer.cornerRadius = 22.5
         button.layer.cornerRadius = 20
         
         return subViewForButton
@@ -90,6 +100,7 @@ final class MainScreenViewController: UIViewController {
         navigationItem.title = "Main"
         navigationController?.navigationBar.barTintColor = .black
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.isTranslucent = false
         
         let doneItem = UIBarButtonItem(barButtonSystemItem: .play, target: self, action: #selector(tap))
         self.navigationController?.navigationBar.topItem?.rightBarButtonItem = doneItem
@@ -99,7 +110,7 @@ final class MainScreenViewController: UIViewController {
         let home = UIImage(named: "home")
         let image = resizeImage(image: home!, targetSize: CGSize(width: 25, height: 25))
         
-        let tabBarItem = UITabBarItem(title: nil, image: image, tag: 0)
+        let tabBarItem = UITabBarItem(title: "Home", image: image, tag: 0)
         self.tabBarItem = tabBarItem
     }
     
@@ -107,7 +118,7 @@ final class MainScreenViewController: UIViewController {
         print("tik")
     }
     
-    private func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage? {
+    func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage? {
         let size = image.size
         
         let widthRatio  = targetSize.width  / size.width
@@ -151,5 +162,22 @@ extension MainScreenViewController: UITableViewDataSource {
         cell.textLabel?.textColor = .white
         cell.textLabel?.text = "Tyt"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier) else { return headerView }
+        cell.backgroundColor = .black
+        cell.textLabel?.textColor = .white
+        cell.textLabel?.text = "Tasks"
+        
+        headerView.addSubview(cell)
+        
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
     }
 }
